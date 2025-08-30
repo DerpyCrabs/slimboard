@@ -1,0 +1,12 @@
+file_format: '1'
+id: slimboard
+name: Slimboard
+type: shield
+url: https://github.com/DerpyCrabs/slimboard
+requires: [seeed_xiao]
+features:
+  - keys
+  - studio
+siblings:
+  - slimboard_left
+  - slimboard_right

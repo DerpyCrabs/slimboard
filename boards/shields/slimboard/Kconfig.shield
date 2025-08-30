@@ -1,0 +1,8 @@
+config SHIELD_SLIMBOARD_LEFT
+    def_bool $(shields_list_contains,slimboard_left)
+
+config SHIELD_SLIMBOARD_RIGHT
+    def_bool $(shields_list_contains,slimboard_right)
+
+config SHIELD_SLIMBOARD_DONGLE
+    def_bool $(shields_list_contains,slimboard_dongle)
