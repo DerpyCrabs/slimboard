@@ -1,19 +1,19 @@
 include:
-  - board: seeed_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: slimboard_left
     name: slimboard_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
-  - board: seeed_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: slimboard_right
     name: slimboard_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
-  - board: seeed_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: slimboard_dongle
     name: slimboard_dongle
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
 
-  - board: seeed_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: settings_reset
     name: slimboard_settings_reset
