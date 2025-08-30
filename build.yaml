@@ -1,12 +1,19 @@
-# board: ['slimboard']
-# shield: ['slimboard_left', 'slimboard_right', 'slimboard_dongle']
 include:
-  - board: slimboard
+  - board: seeed_xiao_nrf52840
     shield: slimboard_left
-  - board: slimboard
+    name: slimboard_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+  - board: seeed_xiao_nrf52840
     shield: slimboard_right
-  - board: slimboard
+    name: slimboard_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
+  - board: seeed_xiao_nrf52840
     shield: slimboard_dongle
-  - board: slimboard
+    name: slimboard_dongle
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+
+  - board: seeed_xiao_nrf52840
     shield: settings_reset
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    name: slimboard_settings_reset
