@@ -52,10 +52,10 @@
 
                 left_layer {
                         bindings = <
-   &none     &kp N1       &kp N2    &kp N3    &kp N4    &kp N5        &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &none
-   &none     &none        &kp GRAVE &kp MINUS &kp EQUAL &kp C_VOL_UP  &none      &kp LBKT   &kp SQT    &kp RBKT   &kp PSCRN  &none
-   &trans    &none        &none     &none     &none     &kp C_VOL_DN  &none      &kp INS    &kp HOME   &kp PG_UP  &kp PIPE   &trans
-                                    &trans    &none     &trans        &mo 3      &trans     &trans
+   &none     &kp N1       &kp N2     &kp N3    &kp N4     &kp N5        &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &none
+   &none     &none        &kp GRAVE  &kp MINUS &kp EQUAL  &kp C_VOL_UP  &none      &kp LBKT   &kp SQT    &kp RBKT   &kp PSCRN  &none
+   &trans    &none        &kp C_PREV &kp C_PP  &kp C_NEXT &kp C_VOL_DN  &none      &kp INS    &kp HOME   &kp PG_UP  &kp PIPE   &trans
+                                    &trans     &none     &trans         &mo 3      &trans     &trans
                         >;
                 };
 
