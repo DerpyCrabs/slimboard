@@ -6,7 +6,6 @@ url: https://github.com/DerpyCrabs/slimboard
 requires: [seeed_xiao]
 features:
   - keys
-  - studio
 siblings:
   - slimboard_left
   - slimboard_right
