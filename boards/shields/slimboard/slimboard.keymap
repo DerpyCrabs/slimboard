@@ -49,6 +49,12 @@
                         #binding-cells = <0>;
                         bindings = <&kp LC(PSCRN)>;
                 };
+
+                win_once: win_once {
+                        compatible = "zmk,behavior-macro-one-param";
+                        #binding-cells = <1>;
+                        bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&to 0>;
+                };
         };
 
         keymap {
@@ -92,9 +98,9 @@
 
                 win_layer {
                         bindings = <
-   &kp LG(W)           &kp LG(N1)          &kp LG(N2)          &kp LG(N3)          &kp LG(N4)          &kp LG(N5)          &trans              &trans              &trans              &trans              &trans              &trans
-   MO_TOG(4)           &kp LG(N6)          &kp LG(LEFT)        &kp LG(RIGHT)       &kp LG(N7)          &kp LA(LG(F))       &trans              &trans              &trans              &trans              &trans              &trans
-   &trans              &kp LG(HOME)        &kp LG(T)           &kp LG(F)           &kp LG(J)           &kp LG(L)           &trans              &trans              &trans              &trans              &trans              &trans
+   &win_once LG(W)     &win_once LG(N1)    &win_once LG(N2)    &win_once LG(N3)    &win_once LG(N4)    &win_once LG(N5)    &trans              &trans              &trans              &trans              &trans              &trans
+   MO_TOG(4)           &win_once LG(N6)    &win_once LG(LEFT)  &win_once LG(RIGHT) &win_once LG(N7)    &win_once LA(LG(F)) &trans              &trans              &trans              &trans              &trans              &trans
+   &trans              &win_once LG(HOME)  &win_once LG(T)     &win_once LG(F)     &win_once LG(J)     &win_once LG(L)     &trans              &trans              &trans              &trans              &trans              &trans
                                                                                                                            &trans              &kp LSHFT           &trans              &trans              &trans              &trans
                         >;
                 };
